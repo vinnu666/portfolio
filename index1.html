@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineesh Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #33423e;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #12124F;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .left {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #14141b;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 50px;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .leftsection {
+            flex: 1;
+        }
+
+        .leftsection h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .leftsection span.purple {
+            color: #B983FF;
+        }
+
+        .leftsection .typing-animation {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            color: #A3A0E7;
+        }
+
+        .leftsection button {
+            background: #191675;
+            padding: 15px 30px;
+            color: aliceblue;
+            font-size: 1.2rem;
+            border-radius: 6px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-right: 15px;
+        }
+
+        .leftsection button:hover {
+            background: transparent;
+            border: 2px solid #191923;
+            color: #191675;
+        }
+
+        .rightsection {
+            flex: 1;
+        }
+
+        .rightsection img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .secondsection {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .secondsection h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .secondsection .text-gray {
+            color: gray;
+        }
+
+        .education-details {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 40px;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .education-card {
+            background-color: #191675;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            width: 30%;
+            min-width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .education-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .education-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .education-card h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .education-card p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        footer {
+            background-color: #1d1d4a;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        footer .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0 20px;
+            gap: 30px;
+        }
+
+        footer .footer-container ul {
+            list-style: none;
+        }
+
+        footer .footer-container ul li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #A0A0C0;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        footer .footer-container ul li:hover {
+            color: #6868EA;
+        }
+
+        .footer-rights {
+            font-size: 1.2rem;
+            color: #9D9999;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vineesh Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection" id="home">
+            <div class="leftsection">
+                <h1>Hi, my name is <span class="purple">Vineesh</span></h1>
+                <div>I am a Computer Science Engineering Student</div>
+                <div class="typing-animation">
+                    <span id="element"></span>
+                </div>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Github</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="10.png" alt="Profile Picture">
+            </div>
+        </section>
+
+        <hr style="border: 0; background: rgb(163, 144, 231); height: 2.2px; margin: 50px 80px;">
+
+        <section class="secondsection" id="About">
+            <h1>Education Details</h1>
+            <p class="text-gray">What I Have Done So Far</p>
+            <div class="education-details">
+                <div class="education-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQsG0dgHn8vaqWA0Pe7vD__LcAv0Rv37EsYQ&s" alt="Vignan University">
+                    <h2>Graduation</h2>
+                    <p>Vignan University, Guntur, Andhra Pradesh</p>
+                    <p>B.Tech in Computer Science Engineering (2021 - 2025) | CGPA: 8.0</p>
+                </div>
+                <div class="education-card">
+                    <img src="6.webp" alt="Sri Vagdevi Junior College">
+                    <h2>Intermediate</h2>
+                    <p>Sri Vagdevi Junior College, Vijayawada, Andhra Pradesh</p>
+                    <p>2019 - 2021 | Percentage: 96%</p>
+                </div>
+                <div class="education-card">
+                    <img src="7.jpeg" alt="Sri Chaitanya School">
+                    <h2>X Class</h2>
+                    <p>Sri Chaitanya School, Vijayawada, Andhra Pradesh</p>
+                    <p>2018 - 2019 | CGPA: 10.0</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Vineesh Portfolio</h1>
+        <div class="footer-container">
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Help</li>
+                    <li>Read</li>
+                    <li>Comments</li>
+                    <li>Connect</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Visit</li>
+                    <li>Terms & Conditions</li>
+                    <li>Why Us</li>
+                    <li>Review</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            &copy; 2024 www.vineeshportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Intermediate coder in CodeChef'],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
